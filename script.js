@@ -228,20 +228,45 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // ============================================
-    // MOBILE MENU TOGGLE (if needed in future)
+    // MOBILE MENU TOGGLE
     // ============================================
-    function initMobileMenu() {
-        const mobileMenuButton = document.querySelector('[data-mobile-menu-toggle]');
-        const mobileMenu = document.querySelector('[data-mobile-menu]');
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
 
-        if (mobileMenuButton && mobileMenu) {
-            mobileMenuButton.addEventListener('click', function () {
-                mobileMenu.classList.toggle('hidden');
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', function () {
+            // Toggle menu visibility
+            mobileMenu.classList.toggle('hidden');
+
+            // Toggle icons
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
             });
-        }
-    }
+        });
 
-    initMobileMenu();
+        // Close menu when clicking outside
+        document.addEventListener('click', function (event) {
+            const isClickInsideMenu = mobileMenu.contains(event.target);
+            const isClickOnButton = mobileMenuButton.contains(event.target);
+
+            if (!isClickInsideMenu && !isClickOnButton && !mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        });
+    }
 
     // ============================================
     // FORM VALIDATION (if contact form exists)
