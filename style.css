@@ -631,7 +631,7 @@ textarea:focus {
   /* Hero Slider Mobile Fixes */
   .hero-slider {
     min-height: 450px;
-    height: auto;
+    /* height: auto; */
   }
 
   .hero-content h1 {
@@ -889,3 +889,4 @@ textarea:focus {
     page-break-inside: avoid;
   }
 }
+
