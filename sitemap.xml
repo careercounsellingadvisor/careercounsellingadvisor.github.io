@@ -1,7 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://careercounsellingadvisor.github.io/</loc>
-    <priority>1.0</priority>
+    <lastmod>2026-01-25</lastmod>
+    <priority>1.00</priority>
   </url>
+
+  <url>
+    <loc>https://careercounsellingadvisor.github.io/about.html</loc>
+    <lastmod>2026-01-25</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://careercounsellingadvisor.github.io/courses.html</loc>
+    <lastmod>2026-01-25</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://careercounsellingadvisor.github.io/services.html</loc>
+    <lastmod>2026-01-25</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://careercounsellingadvisor.github.io/contact.html</loc>
+    <lastmod>2026-01-25</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://careercounsellingadvisor.github.io/colleges.html</loc>
+    <lastmod>2026-01-25</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://careercounsellingadvisor.github.io/career-counselling-patna.html</loc>
+    <lastmod>2026-01-25</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://careercounsellingadvisor.github.io/admission-counselling-bihar.html</loc>
+    <lastmod>2026-01-25</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://careercounsellingadvisor.github.io/bihar-student-credit-card-counselling.html</loc>
+    <lastmod>2026-01-25</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://careercounsellingadvisor.github.io/engineering-medical-admission-patna.html</loc>
+    <lastmod>2026-01-25</lastmod>
+    <priority>0.90</priority>
+  </url>
+
 </urlset>
